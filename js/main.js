@@ -12,6 +12,9 @@ require.config({
     },
     backbone: {
       deps: ['jquery', 'underscore']
+    },
+    d3: {
+      exports: 'd3'
     }
   }
 });

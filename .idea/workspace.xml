@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c124944a-eef5-4f86-83a3-e7a0be3aa0f0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/d3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="view-the-world.iws" />
@@ -88,25 +87,25 @@
       <file leaf-file-name="requestFleet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/requestFleet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="150">
+            <state line="3" column="22" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="data.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="7" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.78086954" vertical-offset="421" max-vertical-offset="1020">
+            <state line="58" column="7" selection-start="1139" selection-end="1139" vertical-scroll-proportion="-24.333334" vertical-offset="286" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="9" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+            <state line="17" column="5" selection-start="392" selection-end="392" vertical-scroll-proportion="0.42570952" vertical-offset="0" max-vertical-offset="599">
               <folding />
             </state>
           </provider>
@@ -741,12 +740,12 @@
       <created>1423203437638</created>
       <updated>1423203437638</updated>
       <workItem from="1423203439218" duration="5688000" />
-      <workItem from="1423209401248" duration="35000" />
+      <workItem from="1423209401248" duration="118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5723000" />
+    <option name="totallyTimeSpent" value="5806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="373" y="70" width="1048" height="719" extended-state="0" />
@@ -875,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/requestFleet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="22" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
@@ -929,16 +921,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+        <state line="58" column="7" selection-start="1139" selection-end="1139" vertical-scroll-proportion="-24.333334" vertical-offset="286" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data.json">
+    <entry file="file://$PROJECT_DIR$/build/requestFleet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="7" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.78086954" vertical-offset="421" max-vertical-offset="1020">
+        <state line="3" column="22" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="392" selection-end="392" vertical-scroll-proportion="0.42570952" vertical-offset="0" max-vertical-offset="599">
           <folding />
         </state>
       </provider>
