@@ -1,7 +1,7 @@
 require.config({
   paths: {
     backbone: 'libs/backbone/backbone-min', // https://github.com/amdjs
-    d3: 'd3/d3.min',
+    d3: 'libs/d3/d3.min',
     jquery: 'libs/jquery/jquery-min',
     underscore: 'libs/underscore/underscore' // https://github.com/amdjs
   },
