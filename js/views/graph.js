@@ -3,14 +3,67 @@ define(function(require) {
 
   var Backbone = require('backbone');
   var Fleet = require('fleet');
-  var d3 = require('d3');
+  var d3 = require('d3')
+     , _ = require('underscore');
   
   var graph = Backbone.View.extend({
     render: function() {
-      this.creatGraph();
+      
+      var that = this;
+      
+      $.ajax({
+        url: "/requestCar",
+        success: function(response) {
+          that.parseCars(JSON.parse(response));
+          that.creatGraph(that.cars);
+        }
+      });
+      
     },
     
-    creatGraph: function() {
+    parseCars: function(cars) {
+      
+      var that = this;
+      
+      this.cars = {
+        "name": "All cars",
+        "children": []
+      };
+      _.each(cars, function(car) {
+        
+        that.sortCar(that.cars.children, car.state, "node");
+        
+        var carState = _.where(that.cars.children, {"name": car.state})[0];
+        that.sortCar(carState.children, car.make, "node");
+        
+        var carMake = _.where(carState.children, {"name": car.make})[0];
+        that.sortCar(carMake.children, car.model, "node");
+
+        var carModel = _.where(carMake.children, {"name": car.model})[0];
+        that.sortCar(carModel.children, car.car_id, "leaf");
+
+      });
+
+      console.log(JSON.stringify(this.cars))
+    },
+    
+    sortCar: function(parentArray, childName, type) {
+      if (_.size(_.where(parentArray, {"name": childName})) === 0) {
+        var newState = {
+          "name": childName
+        };
+        
+        if (type === "node") {
+          newState.children = [];
+        } else {
+          newState.size = 1;
+        }
+        
+        parentArray.push(newState);
+      }
+    },
+    
+    creatGraph: function(json) {
       // Dimensions of sunburst.
       var width = 550;
       var height = 550;
@@ -50,7 +103,18 @@ define(function(require) {
 //var text = getText();
 //var csv = d3.csv.parseRows(text);
 //var json = buildHierarchy(csv);
-      var json = getData();
+      var json = getData(json);
+
+      function getData(json) {
+        $.ajax({
+          url: "/requestFleet",
+          success: function(response) {
+            createVisualization(response);
+          }
+        });
+
+      };
+      createVisualization(json);
 
 // Main function to draw and set up the visualization, once we have the data.
       function createVisualization(json) {
@@ -328,16 +392,6 @@ define(function(require) {
           }
         }
         return root;
-      };
-
-      function getData() {
-        $.ajax({
-          url: "/requestFleet",
-          success: function(response) {
-            createVisualization(response);
-          }
-        });
-
       };
 
     }

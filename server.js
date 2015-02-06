@@ -2,7 +2,11 @@ var fs = require("fs");
 var express = require("express");
 var bodyParser = require('body-parser');
 var http = require('http');
-var requestFleet = require('./build/requestFleet.js')
+var requestFleet = require('./build/requestFleet.js');
+var insertCar = require('./build/insertCar.js');
+var requestCar = require('./build/requestCar.js');
+
+require("./build/config.js")
 
 var site = express();
 //site.use(express.static(__dirname + '/..'));
@@ -18,6 +22,14 @@ site.get("/", function(req, res) {
 
 site.get('/requestFleet', function(req, res) {
   requestFleet.requestFleet(req, res);
+});
+
+site.get('/insertCar', function(req, res) {
+  insertCar.insertCar(req, res);
+});
+
+site.get('/requestCar', function(req, res) {
+  requestCar.requestCar(req, res);
 });
 
 var httpServer = http.createServer(site);
