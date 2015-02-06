@@ -8,8 +8,37 @@ define(function(require) {
      , CarDetailsTemplate = require('text!../../templates/carDetails.tmpl');
   
   var graph = Backbone.View.extend({
+    events: {
+      'click .change-state': 'changeState' 
+    },
+    
     render: function() {
+
+      this.renderCarDetails();
+      this.requestCar();
+
+    },
+    
+    changeState: function(e) {
       
+      var that = this;
+      $(e.currentTarget).data()
+      debugger
+
+      var carInfo = {
+
+      };
+      
+      $.ajax({
+        url: "/updateCar",
+        success: function() {
+          that.requestCar();
+        }
+      });
+    },
+    
+    requestCar: function() {
+
       var that = this;
       
       $.ajax({
@@ -17,10 +46,8 @@ define(function(require) {
         success: function(response) {
           that.parseCars(JSON.parse(response));
           that.creatGraph(that.cars);
-          that.renderCarDetails();
         }
       });
-      
     },
     
     renderCarDetails: function(sequenceArray) {
@@ -29,12 +56,13 @@ define(function(require) {
       var make = "";
       var model = "";
       var car_id = "";
+      var _id = "";
       
       if (sequenceArray) {
         state = sequenceArray[0].name;
         make = sequenceArray[1].name;
         model = sequenceArray[2].name;
-        car_id = sequenceArray[3].name;
+        _id = sequenceArray[3].name;
         console.log(make)
       }
       
@@ -42,7 +70,7 @@ define(function(require) {
         state: state,
         make: make,
         model: model,
-        car_id: car_id
+        _id: _id
       });
       this.$el.find('.car-details').html(template);
     },
@@ -66,7 +94,7 @@ define(function(require) {
         that.sortCar(carMake.children, car.model, "node");
 
         var carModel = _.where(carMake.children, {"name": car.model})[0];
-        that.sortCar(carModel.children, car.car_id, "leaf");
+        that.sortCar(carModel.children, car._id, "leaf");
 
       });
 
@@ -108,6 +136,8 @@ define(function(require) {
 // Total size of all segments; we set this later, after loading the data.
       var totalSize = 0;
 
+      this.$el.find("#chart").empty();
+      
       var vis = d3.select("#chart").append("svg:svg")
         .attr("width", width)
         .attr("height", height)

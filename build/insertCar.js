@@ -54,6 +54,26 @@ exports.insertCar = function(req, res) {
     }
   );
 
+  var carData6 = new Car(
+    {
+      "car_id": "6",
+      "thumbnail": "",
+      "make": "Honda",
+      "model": "Accord",
+      "state": "O"
+    }
+  );
+
+  var carData7 = new Car(
+    {
+      "car_id": "7",
+      "thumbnail": "",
+      "make": "Honda",
+      "model": "Accord",
+      "state": "O"
+    }
+  );
+
   var carModel = new Car(carData);
   carModel.save(function(err) {
     if(err) {
@@ -90,6 +110,24 @@ exports.insertCar = function(req, res) {
 
   var carModel5 = new Car(carData5);
   carModel5.save(function(err) {
+    if(err) {
+      console.log('Error on save!')
+    } else {
+
+    }
+  });
+
+  var carModel6 = new Car(carData6);
+  carModel6.save(function(err) {
+    if(err) {
+      console.log('Error on save!')
+    } else {
+      
+    }
+  });
+
+  var carModel7 = new Car(carData7);
+  carModel7.save(function(err) {
     if(err) {
       console.log('Error on save!')
     } else {
