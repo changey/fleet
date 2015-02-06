@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c124944a-eef5-4f86-83a3-e7a0be3aa0f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/fleet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/graph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="view-the-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+            <state line="3" column="18" selection-start="118" selection-end="118" vertical-scroll-proportion="0.114503816" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -129,16 +123,25 @@
       <file leaf-file-name="fleet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/fleet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="12" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="graph.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/views/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="205" selection-end="205" vertical-scroll-proportion="0.32697546" vertical-offset="0" max-vertical-offset="5280">
+            <state line="6" column="2" selection-start="143" selection-end="143" vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="5280">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="4" selection-start="729" selection-end="729" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -174,8 +177,8 @@
         <option value="$PROJECT_DIR$/js/fleet.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/router.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/views/graph.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -302,6 +305,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view-the-world" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aafleet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -736,12 +757,12 @@
       <changelist id="c124944a-eef5-4f86-83a3-e7a0be3aa0f0" name="Default" comment="" />
       <created>1423203437638</created>
       <updated>1423203437638</updated>
-      <workItem from="1423203439218" duration="5449000" />
+      <workItem from="1423203439218" duration="5688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5449000" />
+    <option name="totallyTimeSpent" value="5688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="390" y="70" width="1048" height="719" extended-state="0" />
@@ -828,23 +849,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sunburst.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="41" selection-start="0" selection-end="9375" vertical-scroll-proportion="-1.7307693" vertical-offset="0" max-vertical-offset="5010">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="729" selection-end="729" vertical-scroll-proportion="-9.125" vertical-offset="156" max-vertical-offset="525">
+        <state line="25" column="4" selection-start="729" selection-end="729" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/fleet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sunburst.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="0" selection-end="9375" vertical-scroll-proportion="-1.7307693" vertical-offset="0" max-vertical-offset="5010">
+        <state line="12" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
           <folding />
         </state>
       </provider>
@@ -856,16 +877,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/views/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+        <state line="6" column="2" selection-start="143" selection-end="143" vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="5280">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/graph.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="205" selection-end="205" vertical-scroll-proportion="0.32697546" vertical-offset="0" max-vertical-offset="5280">
+        <state line="3" column="18" selection-start="118" selection-end="118" vertical-scroll-proportion="0.114503816" vertical-offset="0" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
