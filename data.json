@@ -1,1 +1,63 @@
-{"name": "foo"}
+{
+  "name": "ref",
+  "children": [
+    {
+      "name": "Unoccupied",
+      "children": [
+        {
+          "name": "Toyota",
+          "children": [
+            {"name": "Camry", "size": 1}
+          ]
+        },
+        {
+          "name": "Tesla",
+          "children": [
+            {"name": "Model S", "size": 2}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unoccupied, but pending pickup",
+      "children": [
+        {
+          "name": "Toyota",
+          "children": [
+            {"name": "Camry", "size": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Occupied",
+      "children": [
+        {
+          "name": "Honda",
+          "children": [
+            {"name": "Civic", "size": 32},
+            {"name": "Accord", "size": 26}
+          ]
+        },
+        {
+          "name": "Tesla",
+          "children": [
+            {"name": "Model S", "size": 35}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Occupied, but pending return",
+      "children": [
+        {
+          "name": "Tesla",
+          "children": [
+            {"name": "Model S", "size": 2}
+          ]
+        }
+      ]
+    }
+
+  ]
+}
