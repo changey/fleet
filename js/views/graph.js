@@ -4,7 +4,8 @@ define(function(require) {
   var Backbone = require('backbone');
   var Fleet = require('fleet');
   var d3 = require('d3')
-     , _ = require('underscore');
+     , _ = require('underscore')
+     , CarDetailsTemplate = require('text!../../templates/carDetails.tmpl');
   
   var graph = Backbone.View.extend({
     render: function() {
@@ -16,9 +17,34 @@ define(function(require) {
         success: function(response) {
           that.parseCars(JSON.parse(response));
           that.creatGraph(that.cars);
+          that.renderCarDetails();
         }
       });
       
+    },
+    
+    renderCarDetails: function(sequenceArray) {
+
+      var state = "";
+      var make = "";
+      var model = "";
+      var car_id = "";
+      
+      if (sequenceArray) {
+        state = sequenceArray[0].name;
+        make = sequenceArray[1].name;
+        model = sequenceArray[2].name;
+        car_id = sequenceArray[3].name;
+        console.log(make)
+      }
+      
+      var template = _.template(CarDetailsTemplate, {
+        state: state,
+        make: make,
+        model: model,
+        car_id: car_id
+      });
+      this.$el.find('.car-details').html(template);
     },
     
     parseCars: function(cars) {
@@ -44,7 +70,6 @@ define(function(require) {
 
       });
 
-      console.log(JSON.stringify(this.cars))
     },
     
     sortCar: function(parentArray, childName, type) {
@@ -64,6 +89,9 @@ define(function(require) {
     },
     
     creatGraph: function(json) {
+      
+      var that = this;
+      
       // Dimensions of sunburst.
       var width = 550;
       var height = 550;
@@ -103,7 +131,7 @@ define(function(require) {
 //var text = getText();
 //var csv = d3.csv.parseRows(text);
 //var json = buildHierarchy(csv);
-      var json = getData(json);
+      //var json = getData(json);
 
       function getData(json) {
         $.ajax({
@@ -187,7 +215,9 @@ define(function(require) {
 
         var sequenceArray = getAncestors(d);
         updateBreadcrumbs(sequenceArray, percentageString);
-        //debugger
+        if (_.size(sequenceArray) === 4) {
+          that.renderCarDetails(sequenceArray);
+        }
 
         // Fade all the segments.
         d3.selectAll("path")

@@ -18,8 +18,8 @@ exports.insertCar = function(req, res) {
     {
       "car_id": "2",
       "thumbnail": "",
-      "make": "Honda",
-      "model": "Civic",
+      "make": "Nissan",
+      "model": "Leaf",
       "state": "O"
     }
   );
@@ -28,9 +28,29 @@ exports.insertCar = function(req, res) {
     {
       "car_id": "3",
       "thumbnail": "",
+      "make": "Nissan",
+      "model": "Sentra",
+      "state": "U"
+    }
+  );
+
+  var carData4 = new Car(
+    {
+      "car_id": "4",
+      "thumbnail": "",
+      "make": "Honda",
+      "model": "Civic",
+      "state": "OP"
+    }
+  );
+
+  var carData5 = new Car(
+    {
+      "car_id": "5",
+      "thumbnail": "",
       "make": "Honda",
       "model": "Accord",
-      "state": "U"
+      "state": "UP"
     }
   );
 
@@ -57,7 +77,24 @@ exports.insertCar = function(req, res) {
     if(err) {
       console.log('Error on save!')
     } else {
+    }
+  });
+  
+  var carModel4 = new Car(carData4);
+  carModel4.save(function(err) {
+    if(err) {
+      console.log('Error on save!')
+    } else {
+    }
+  });
+
+  var carModel5 = new Car(carData5);
+  carModel5.save(function(err) {
+    if(err) {
+      console.log('Error on save!')
+    } else {
       res.send("success");
     }
   });
+  
 };

@@ -1,0 +1,41 @@
+<div>
+  <table>
+    <tr>
+      <td>
+        Make
+      </td>
+      <td>
+        <%= make %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Model
+      </td>
+      <td>
+        <%= model %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Car ID
+      </td>
+      <td>
+        <%= car_id %>
+      </td>
+    </tr>
+  </table>
+  <br></br>
+  <% if(state === "U") { %>
+  <button>Reserve</button>
+  <% } %>
+  <% if(state === "UP") { %>
+  <button>Occupy</button>
+  <% } %>
+  <% if(state === "O") { %>
+  <button>Schedule a return</button>
+  <% } %>
+  <% if(state === "OP") { %>
+  <button>Vacate</button>
+  <% } %>
+</div>
