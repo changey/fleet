@@ -7,7 +7,7 @@ exports.updateCar = function(req, res) {
   var that = this;
   
   Car.find({
-    car_id: 1
+    "_id": req.body.carId
   }).exec(function(err, cars) {
 
     var output = [];
@@ -15,7 +15,7 @@ exports.updateCar = function(req, res) {
       console.log("No Car Found");
       res.send("No Car Found");
     } else {
-      console.log(cars[0].state)
+      console.log(cars[0])
       var oldState = cars[0].state;
       var nextState = "";
       
@@ -29,7 +29,7 @@ exports.updateCar = function(req, res) {
         nextState = "O"
       }
       
-      that.updateState(nextState);
+      that.updateState(req, nextState);
       res.send("foo");
     };
   });
@@ -37,11 +37,11 @@ exports.updateCar = function(req, res) {
   
 };
 
-exports.updateState = function(nextState) {
+exports.updateState = function(req, nextState) {
   Car.update({
-      car_id: 1
+      car_id: req.body.carId
     }, {
-      car_id: 1,
+      car_id: req.body.carId,
       state: nextState
     }, {
       upsert: true

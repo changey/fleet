@@ -22,14 +22,15 @@ define(function(require) {
     changeState: function(e) {
       
       var that = this;
-      $(e.currentTarget).data()
-      debugger
+      var carId = $(e.currentTarget).data().id;
 
       var carInfo = {
-
+        carId: carId
       };
       
       $.ajax({
+        type: "POST",
+        data: carInfo,
         url: "/updateCar",
         success: function() {
           that.requestCar();
@@ -63,7 +64,6 @@ define(function(require) {
         make = sequenceArray[1].name;
         model = sequenceArray[2].name;
         _id = sequenceArray[3].name;
-        console.log(make)
       }
       
       var template = _.template(CarDetailsTemplate, {

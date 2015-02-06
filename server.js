@@ -33,7 +33,7 @@ site.get('/requestCar', function(req, res) {
   requestCar.requestCar(req, res);
 });
 
-site.get('/updateCar', function(req, res) {
+site.post('/updateCar', function(req, res) {
   updateCar.updateCar(req, res);
 });
 
