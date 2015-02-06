@@ -7,10 +7,10 @@ var carSchema = new mongoose.Schema({
   "make": String,
   "model": String,
   "state": String
-  // o - occupied
-  // op - occupied, pending return
-  // u - unoccupied
-  // up - unoccupied, pending return
+  // O - occupied
+  // OP - occupied, pending return
+  // U - unoccupied
+  // UP - unoccupied, pending return
 });
 
 module.exports = mongoose.model('cars', carSchema);

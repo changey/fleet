@@ -5,6 +5,7 @@ var http = require('http');
 var requestFleet = require('./build/requestFleet.js');
 var insertCar = require('./build/insertCar.js');
 var requestCar = require('./build/requestCar.js');
+var updateCar = require('./build/updateCar.js');
 
 require("./build/config.js")
 
@@ -30,6 +31,10 @@ site.get('/insertCar', function(req, res) {
 
 site.get('/requestCar', function(req, res) {
   requestCar.requestCar(req, res);
+});
+
+site.get('/updateCar', function(req, res) {
+  updateCar.updateCar(req, res);
 });
 
 var httpServer = http.createServer(site);
