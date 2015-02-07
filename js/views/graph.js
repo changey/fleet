@@ -54,6 +54,7 @@ define(function(require) {
     
     renderCarDetails: function(sequenceArray) {
 
+      var stateSymbol = "";
       var state = "";
       var make = "";
       var model = "";
@@ -61,19 +62,33 @@ define(function(require) {
       var _id = "";
       
       if (sequenceArray) {
-        state = sequenceArray[0].name;
+        stateSymbol= sequenceArray[0].name;
+        state = this.literalizeState(stateSymbol);
         make = sequenceArray[1].name;
         model = sequenceArray[2].name;
         _id = sequenceArray[3].name;
       }
       
       var template = _.template(CarDetailsTemplate, {
+        stateSymbol: stateSymbol,
         state: state,
         make: make,
         model: model,
         _id: _id
       });
       this.$el.find('.car-details').html(template);
+    },
+    
+    literalizeState: function(state) {
+      if (state === "O") {
+        return "Occupied";
+      } else if (state === "OP") {
+        return "Occupied, but pending return";
+      } else if (state === "U") {
+        return "Unoccupied";
+      } else if (state === "UP") {
+        return "Unoccupied, but pending pickup";
+      }
     },
     
     parseCars: function(cars) {
