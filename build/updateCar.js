@@ -39,9 +39,9 @@ exports.updateCar = function(req, res) {
 
 exports.updateState = function(req, nextState) {
   Car.update({
-      car_id: req.body.carId
+      "_id": req.body.carId
     }, {
-      car_id: req.body.carId,
+      "_id": req.body.carId,
       state: nextState
     }, {
       upsert: true

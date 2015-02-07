@@ -34,6 +34,7 @@ define(function(require) {
         url: "/updateCar",
         success: function() {
           that.requestCar();
+          //that.renderCarDetails();
         }
       });
     },
