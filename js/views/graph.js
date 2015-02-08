@@ -1,24 +1,65 @@
 define(function(require) {
   'user strict';
 
+  require('jquery.ui');
+  
   var Backbone = require('backbone')
      , Fleet = require('fleet')
      , d3 = require('d3')
      , _ = require('underscore')
      , CarDetailsTemplate = require('text!../../templates/carDetails.tmpl')
-     , UnoccupiedCarsTemplate = require('text!../../templates/unoccupiedCars.tmpl');
+     , UnoccupiedCarsTemplate = require('text!../../templates/unoccupiedCars.tmpl')
+     , UnoccupiedCarsTableTemplate = require('text!../../templates/unoccupiedCarsTable.tmpl')
+     , Moment = require('moment')
+     , UtilizationTemplate = require('text!../../templates/utilization.tmpl');
   
   var graph = Backbone.View.extend({
     events: {
-      'click .change-state': 'changeState' 
+      'click .change-state': 'changeState',
+      'click .unoccupied-search': 'searchUnoccupied'
     },
     
     render: function() {
 
+      var that = this;
+      
       this.renderCarDetails();
       this.requestCar();
-      this.requestUnoccupiedCars();
+      var unoccupiedCarsTemplate = _.template(UnoccupiedCarsTemplate);
 
+      this.$el.find('.unoccupied-cars-container').html(unoccupiedCarsTemplate);
+      
+      this.$el.find('.unoccupied-date').val(Moment(new Date()).format('MM/DD/YYYY'));
+
+      var utilizationTemplate = _.template(UtilizationTemplate);
+
+      this.$el.find('.utilization-container').html(utilizationTemplate);
+
+      this.$el.find('.datepicker').datepicker();
+
+    },
+
+    searchUnoccupied: function() {
+
+      var that = this;
+      var queryDate = this.$el.find('.unoccupied-date').val();
+
+      $.ajax({
+        type: "POST",
+        url: "/requestUnoccupiedCars",
+        data: {
+          queryDate: queryDate
+        },
+        success: function(unoccupiedCars) {
+
+          //that.renderUnoccupiedCars(unoccupiedCars);
+          var template = _.template(UnoccupiedCarsTableTemplate, {
+            unoccupiedCars: unoccupiedCars
+          });
+
+          that.$el.find('.unoccupied-table-container').html(template);
+        }
+      });
     },
     
     changeState: function(e) {
@@ -49,21 +90,6 @@ define(function(require) {
         success: function(response) {
           that.parseCars(JSON.parse(response));
           that.creatGraph(that.cars);
-        }
-      });
-    },
-    
-    requestUnoccupiedCars: function() {
-      var that = this;
-
-      $.ajax({
-        url: "/requestUnoccupiedCars",
-        success: function(unoccupiedCars) {
-
-          var template = _.template(UnoccupiedCarsTemplate, {
-            unoccupiedCars: unoccupiedCars
-          });
-          that.$el.find('.unoccupied-cars-container').html(template);
         }
       });
     },

@@ -15,16 +15,15 @@ exports.updateCar = function(req, res) {
       console.log("No Car Found");
       res.send("No Car Found");
     } else {
-      console.log(cars[0])
       var oldState = cars[0].state;
       var nextState = "";
       
       if (oldState === "O") {
-        nextState = "UP";
-      } else if (oldState === "UP") {
+        nextState = "OP";
+      } else if (oldState === "OP") {
         nextState = "U";
       } else if (oldState === "U") {
-        nextState = "OP";
+        nextState = "UP";
       } else if (oldState) {
         nextState = "O"
       }

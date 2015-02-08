@@ -9,6 +9,7 @@ var updateCar = require('./build/updateCar.js');
 var insertBooking = require('./build/insertBooking.js');
 var requestUnoccupiedCars = require('./build/requestUnoccupiedCars.js');
 var insertReservation = require('./build/insertReservation.js');
+var insertMember = require('./build/insertMember.js');
 
 require("./build/config.js")
 
@@ -44,7 +45,7 @@ site.get('/insertBooking', function(req, res) {
   insertBooking.insertBooking(req, res);
 });
 
-site.get('/requestUnoccupiedCars', function(req, res) {
+site.post('/requestUnoccupiedCars', function(req, res) {
   requestUnoccupiedCars.requestUnoccupiedCars(req, res);
 });
 
@@ -54,6 +55,10 @@ site.get('/insertReservation', function(req, res) {
 
 site.get('/executeReservation', function(req, res) {
   insertReservation.executeReservation(req, res);
+});
+
+site.get('/insertMember', function(req, res) {
+  insertMember.insertMember(req, res);
 });
 
 var httpServer = http.createServer(site);

@@ -2,6 +2,7 @@ var mongoose = require("mongoose");
 var Car = require("./models/car_model.js");
 var Booking = require("./models/booking_model.js");
 var _ = require("underscore");
+var Global = require("./global.js");
 require("./config.js");
 
 exports.unoccupiedCars = [];
@@ -10,8 +11,9 @@ exports.requestUnoccupiedCars = function(req, res) {
 
   var that = this;
 
+  console.log(Global.parseQueryDate(req.body.queryDate))
   Booking.find({
-    date: new Date(2015, 1, 7)
+    date: Global.parseQueryDate(req.body.queryDate)
   }).select({'car_id': 1})
     .exec(function(err, bookings) {
 

@@ -1,16 +1,3 @@
-<table>
-  <tr>
-    <th>Car ID</th>
-    <th>Make</th>
-    <th>Model</th>
-    <th>State</th>
-  </tr>
-  <% _.each(unoccupiedCars, function(car) { %>
-  <tr>
-    <td><%= car._id %></td>
-    <td><%= car.make %></td>
-    <td><%= car.model %></td>
-    <td><%= car.state %></td>
-  </tr>
-  <% }); %>
-</table>
+<input class="datepicker unoccupied-date">
+<button class="unoccupied-search">Search</button>
+<div class="unoccupied-table-container"></div>

@@ -23,4 +23,13 @@ exports.getTodayDate = function() {
   return new Date(year + 1900, month, date);
 };
 
+exports.parseQueryDate = function(rawDate) {
+  var dateElements = rawDate.split("/");
+  var month = dateElements[0];
+  var date = dateElements[1];
+  var year = dateElements[2];
+  
+  return new Date(year, month - 1, date);
+};
+
 exports.calendarStopDate = new Date (2015, 1, 28);

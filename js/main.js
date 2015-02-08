@@ -3,9 +3,11 @@ require.config({
     backbone: 'libs/backbone/backbone-min', // https://github.com/amdjs
     d3: 'libs/d3.min',
     jquery: 'libs/jquery/jquery-min',
+    'jquery.ui': 'libs/jquery.ui-min',
     underscore: 'libs/underscore/underscore', // https://github.com/amdjs
     text: '../vendor/js/requirejs/text',
-    templates: '../templates'
+    templates: '../templates',
+    moment: 'libs/moment'
   },
 
   shim: {
