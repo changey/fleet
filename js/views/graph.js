@@ -22,6 +22,7 @@ define(function(require) {
     render: function() {
 
       var that = this;
+      this.foo = "bar";
       
       this.renderCarDetails();
       this.requestCar();
@@ -188,8 +189,28 @@ define(function(require) {
         w: 75, h: 30, s: 3, t: 10
       };
 
+      var domain = [0, 1];
 // make `colors` an ordinal scale
       var colors = d3.scale.category20();
+      var greenColorScale = d3.scale.linear()
+        .range(['#C1FFC1', '#137B13']) //light->dark
+        .domain(domain);
+
+      var redColorScale = d3.scale.linear()
+        .range(['#ffe5e5', '#ff0000'])
+        .domain(domain);
+
+      var purpleColorScale = d3.scale.linear()
+        .range(['#ffc0cb', '#800080']) // or use hex values
+        .domain(domain);
+
+      var blueColorScale = d3.scale.linear()
+        .range(['lightblue', 'darkblue']) // or use hex values
+        .domain(domain);
+      
+//      var colors = d3.scale.linear()
+//        .domain([0, 1])
+//        .range(["white", "green"]);
 
 // Total size of all segments; we set this later, after loading the data.
       var totalSize = 0;
@@ -219,17 +240,7 @@ define(function(require) {
 //var text = getText();
 //var csv = d3.csv.parseRows(text);
 //var json = buildHierarchy(csv);
-      //var json = getData(json);
-
-      function getData(json) {
-        $.ajax({
-          url: "/requestFleet",
-          success: function(response) {
-            createVisualization(response);
-          }
-        });
-
-      };
+      
       createVisualization(json);
 
 // Main function to draw and set up the visualization, once we have the data.
@@ -267,7 +278,7 @@ define(function(require) {
 
         // make sure this is done after setting the domain
         drawLegend();
-
+        that.level2Flag = true;
 
         var path = vis.data([json]).selectAll("path")
           .data(nodes)
@@ -275,7 +286,20 @@ define(function(require) {
           .attr("display", function(d) { return d.depth ? null : "none"; })
           .attr("d", arc)
           .attr("fill-rule", "evenodd")
-          .style("fill", function(d) { return colors(d.name); })
+          .style("fill", function(d) { 
+            if(d.depth === 1) {
+              return getColor(d.depth, d.name, true);
+            } else if(d.depth === 2) {
+              that.level2flag = !that.level2flag;
+              return getColor(d.depth, d.parent.name, that.level2flag);
+            } else if(d.depth === 3) {
+              that.level3flag = !that.level3flag;
+              return getColor(d.depth, d.parent.parent.name, that.level3flag);
+            } else if(d.depth === 4) {
+              that.level4flag = !that.level4flag;
+              return getColor(d.depth, d.parent.parent.parent.name, that.level4flag);
+            }
+          })
           .style("opacity", 1)
           .on("mouseover", mouseover);
 
@@ -285,6 +309,37 @@ define(function(require) {
         // Get total size of the tree = value of root node from partition.
         totalSize = path.node().__data__.value;
       };
+      
+      function getColor(depth, category, flag) {
+        var colorGradient1;
+        var colorGradient2;
+        var colorScale;
+        
+        if(category === "O") {
+          colorScale = greenColorScale;
+        } else if (category === "U") {
+          colorScale = redColorScale;
+        } else if (category === "UP") {
+          colorScale = blueColorScale;
+        } else {
+          colorScale = purpleColorScale;
+        }
+        
+        if(depth === 1) {
+          colorGradient1 = 1;
+        } else if (depth === 2) {
+          colorGradient1 = 0.85;
+          colorGradient2 = 0.65;
+        } else if(depth === 3) {
+          colorGradient1 = 0.5;
+          colorGradient2 = 0.35;
+        } else if(depth === 4) {
+          colorGradient1 = 0.2;
+          colorGradient2 = 0;
+        }
+
+        return flag ? colorScale(colorGradient1) : colorScale(colorGradient2);
+      }
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
       function mouseover(d) {
