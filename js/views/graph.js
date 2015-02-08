@@ -1,11 +1,12 @@
 define(function(require) {
   'user strict';
 
-  var Backbone = require('backbone');
-  var Fleet = require('fleet');
-  var d3 = require('d3')
+  var Backbone = require('backbone')
+     , Fleet = require('fleet')
+     , d3 = require('d3')
      , _ = require('underscore')
-     , CarDetailsTemplate = require('text!../../templates/carDetails.tmpl');
+     , CarDetailsTemplate = require('text!../../templates/carDetails.tmpl')
+     , UnoccupiedCarsTemplate = require('text!../../templates/unoccupiedCars.tmpl');
   
   var graph = Backbone.View.extend({
     events: {
@@ -16,6 +17,7 @@ define(function(require) {
 
       this.renderCarDetails();
       this.requestCar();
+      this.requestUnoccupiedCars();
 
     },
     
@@ -34,7 +36,6 @@ define(function(require) {
         url: "/updateCar",
         success: function() {
           that.requestCar();
-          //that.renderCarDetails();
         }
       });
     },
@@ -48,6 +49,21 @@ define(function(require) {
         success: function(response) {
           that.parseCars(JSON.parse(response));
           that.creatGraph(that.cars);
+        }
+      });
+    },
+    
+    requestUnoccupiedCars: function() {
+      var that = this;
+
+      $.ajax({
+        url: "/requestUnoccupiedCars",
+        success: function(unoccupiedCars) {
+
+          var template = _.template(UnoccupiedCarsTemplate, {
+            unoccupiedCars: unoccupiedCars
+          });
+          that.$el.find('.unoccupied-cars-container').html(template);
         }
       });
     },

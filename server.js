@@ -6,6 +6,9 @@ var requestFleet = require('./build/requestFleet.js');
 var insertCar = require('./build/insertCar.js');
 var requestCar = require('./build/requestCar.js');
 var updateCar = require('./build/updateCar.js');
+var insertBooking = require('./build/insertBooking.js');
+var requestUnoccupiedCars = require('./build/requestUnoccupiedCars.js');
+var insertReservation = require('./build/insertReservation.js');
 
 require("./build/config.js")
 
@@ -35,6 +38,22 @@ site.get('/requestCar', function(req, res) {
 
 site.post('/updateCar', function(req, res) {
   updateCar.updateCar(req, res);
+});
+
+site.get('/insertBooking', function(req, res) {
+  insertBooking.insertBooking(req, res);
+});
+
+site.get('/requestUnoccupiedCars', function(req, res) {
+  requestUnoccupiedCars.requestUnoccupiedCars(req, res);
+});
+
+site.get('/insertReservation', function(req, res) {
+  insertReservation.insertReservation(req, res);
+});
+
+site.get('/executeReservation', function(req, res) {
+  insertReservation.executeReservation(req, res);
 });
 
 var httpServer = http.createServer(site);
