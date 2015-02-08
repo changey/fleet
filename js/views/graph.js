@@ -201,16 +201,12 @@ define(function(require) {
         .domain(domain);
 
       var purpleColorScale = d3.scale.linear()
-        .range(['#ffc0cb', '#800080']) // or use hex values
+        .range(['#ffc0cb', '#800080'])
         .domain(domain);
 
       var blueColorScale = d3.scale.linear()
-        .range(['lightblue', 'darkblue']) // or use hex values
+        .range(['lightblue', 'darkblue'])
         .domain(domain);
-      
-//      var colors = d3.scale.linear()
-//        .domain([0, 1])
-//        .range(["white", "green"]);
 
 // Total size of all segments; we set this later, after loading the data.
       var totalSize = 0;
@@ -225,6 +221,7 @@ define(function(require) {
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
       var partition = d3.layout.partition()
+        .sort(function(a, b) { return d3.ascending(a.name, b.name); })
         .size([2 * Math.PI, radius * radius])
         .value(function(d) { return d.size; });
 
@@ -278,7 +275,6 @@ define(function(require) {
 
         // make sure this is done after setting the domain
         drawLegend();
-        that.level2Flag = true;
 
         var path = vis.data([json]).selectAll("path")
           .data(nodes)
@@ -286,7 +282,7 @@ define(function(require) {
           .attr("display", function(d) { return d.depth ? null : "none"; })
           .attr("d", arc)
           .attr("fill-rule", "evenodd")
-          .style("fill", function(d) { 
+          .style("fill", function(d) {
             if(d.depth === 1) {
               return getColor(d.depth, d.name, true);
             } else if(d.depth === 2) {
@@ -304,7 +300,7 @@ define(function(require) {
           .on("mouseover", mouseover);
 
         // Add the mouseleave handler to the bounding circle.
-        d3.select("#container").on("mouseleave", mouseleave);
+//        d3.select("#container").on("mouseleave", mouseleave);
 
         // Get total size of the tree = value of root node from partition.
         totalSize = path.node().__data__.value;
@@ -320,9 +316,9 @@ define(function(require) {
         } else if (category === "U") {
           colorScale = redColorScale;
         } else if (category === "UP") {
-          colorScale = blueColorScale;
-        } else {
           colorScale = purpleColorScale;
+        } else {
+          colorScale = blueColorScale;
         }
         
         if(depth === 1) {
