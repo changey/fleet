@@ -1,8 +1,32 @@
 var mongoose = require("mongoose");
 var Car = require("./models/car_model.js");
+var cars = require("../cars.json");
+var _ = require("underscore");
 require("./config.js");
 
 exports.insertCar = function(req, res) {
+
+  _.each(cars, function(car, index) {
+
+    if(car !== null) {
+
+      Car.find().limit(1)
+        .exec(function(err, result) {
+
+          var carModel = new Car(car);
+          carModel.save(function(err) {
+            if(err) console.log('Error on save!')
+          });
+        });
+    }
+    else {
+      console.log("Error getting the car")
+    }
+  });
+  
+};
+
+exports.simpleInsertCar = function(req, res) {
 
   var carData = new Car(
     {
@@ -79,7 +103,7 @@ exports.insertCar = function(req, res) {
     if(err) {
       console.log('Error on save!')
     } else {
-     // res.send("success");
+      // res.send("success");
     }
   });
 
@@ -91,7 +115,7 @@ exports.insertCar = function(req, res) {
       //res.send("success");
     }
   });
-  
+
   var carModel3 = new Car(carData3);
   carModel3.save(function(err) {
     if(err) {
@@ -99,7 +123,7 @@ exports.insertCar = function(req, res) {
     } else {
     }
   });
-  
+
   var carModel4 = new Car(carData4);
   carModel4.save(function(err) {
     if(err) {
@@ -122,7 +146,7 @@ exports.insertCar = function(req, res) {
     if(err) {
       console.log('Error on save!')
     } else {
-      
+
     }
   });
 

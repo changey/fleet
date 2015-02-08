@@ -13,7 +13,8 @@ exports.requestUnoccupiedCars = function(req, res) {
 
   console.log(Global.parseQueryDate(req.body.queryDate))
   Booking.find({
-    date: Global.parseQueryDate(req.body.queryDate)
+    date: Global.parseQueryDate(req.body.queryDate),
+    occupied: true
   }).select({'car_id': 1})
     .exec(function(err, bookings) {
 
@@ -32,7 +33,7 @@ exports.getCarInfo = function(res, occupiedCarIds) {
 
   Car.find({
     _id: {$nin: occupiedCarIds},
-    state: {$ne: "O"}
+    state: {$nin: ["O", "OP"]}
   }).select().exec(function(err, cars) {
 
     if(err || !cars || cars.length === 0) {

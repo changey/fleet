@@ -29,7 +29,7 @@ exports.updateCar = function(req, res) {
       }
       
       that.updateState(req, nextState);
-      res.send("foo");
+      res.send("success");
     };
   });
   

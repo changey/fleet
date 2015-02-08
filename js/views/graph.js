@@ -67,19 +67,23 @@ define(function(require) {
       
       var that = this;
       var carId = $(e.currentTarget).data().id;
+      var action = $(e.currentTarget).data().action;
 
       var carInfo = {
-        carId: carId
+        carId: carId,
+        reservedDate: this.$el.find('.reserve-date').val()
       };
-      
+
       $.ajax({
         type: "POST",
         data: carInfo,
-        url: "/updateCar",
+        url: "/" + action,
         success: function() {
           that.requestCar();
         }
       });
+
+      this.$el.find('.car-details').empty();
     },
     
     requestCar: function() {
@@ -90,7 +94,7 @@ define(function(require) {
         url: "/requestCar",
         success: function(response) {
           that.parseCars(JSON.parse(response));
-          that.creatGraph(that.cars);
+          that.createGraph(that.cars);
         }
       });
     },
@@ -101,7 +105,6 @@ define(function(require) {
       var state = "";
       var make = "";
       var model = "";
-      var car_id = "";
       var _id = "";
       
       if (sequenceArray) {
@@ -120,6 +123,8 @@ define(function(require) {
         _id: _id
       });
       this.$el.find('.car-details').html(template);
+      this.$el.find('.datepicker').datepicker();
+      this.$el.find('.datepicker').val(Moment(new Date()).format('MM/DD/YYYY'));
     },
     
     literalizeState: function(state) {
@@ -175,7 +180,7 @@ define(function(require) {
       }
     },
     
-    creatGraph: function(json) {
+    createGraph: function(json) {
       
       var that = this;
       
@@ -193,7 +198,7 @@ define(function(require) {
 // make `colors` an ordinal scale
       var colors = d3.scale.category20();
       var greenColorScale = d3.scale.linear()
-        .range(['#C1FFC1', '#137B13']) //light->dark
+        .range(['#1dc28d', '#137B13']) //light->dark
         .domain(domain);
 
       var redColorScale = d3.scale.linear()
@@ -204,8 +209,8 @@ define(function(require) {
         .range(['#ffc0cb', '#800080'])
         .domain(domain);
 
-      var blueColorScale = d3.scale.linear()
-        .range(['lightblue', 'darkblue'])
+      var orangeColorScale = d3.scale.linear()
+        .range(['#FBCEB1', '#FF7F00'])
         .domain(domain);
 
 // Total size of all segments; we set this later, after loading the data.
@@ -300,7 +305,7 @@ define(function(require) {
           .on("mouseover", mouseover);
 
         // Add the mouseleave handler to the bounding circle.
-//        d3.select("#container").on("mouseleave", mouseleave);
+        d3.select("#container").on("mousedown", mouseleave);
 
         // Get total size of the tree = value of root node from partition.
         totalSize = path.node().__data__.value;
@@ -318,7 +323,7 @@ define(function(require) {
         } else if (category === "UP") {
           colorScale = purpleColorScale;
         } else {
-          colorScale = blueColorScale;
+          colorScale = orangeColorScale;
         }
         
         if(depth === 1) {

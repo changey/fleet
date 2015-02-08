@@ -1,0 +1,602 @@
+[
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "X6VRUDV", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "RO5QN7H", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "UGA1C1M", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "9GXX8MC", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "TM1X36D", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "Y35HU65", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "DDA7T74", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "RDLR2UL", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "RHY71BC", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "FFELN49", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "NTUJAU2", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "USRGNSF", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "FA3VNJQ", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "DE8W47G", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "HYTWN02", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "U3B8VS9", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "2OM0FAI", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "EOWU4Q3", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "YUJN30G", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "TRBY5WM", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "REK8W3L", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "6SEMY7O", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "QS00V5U", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "5QK1YLF", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "5SNEN47", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "HV6J3UI", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "07DA606", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "1357BRO", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "89C7IOY", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "F1O0S82", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "3HH7I28", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "XBNRL40", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "XJ6V3MT", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "G93L9NH", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "WT0P15P", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "93EE7QG", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "BIJNXRB", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "H5QUI4G", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "GJJDTAM", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "5TSB1CH", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "R1CLQA4", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "UHDL399", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "Y6UDV4A", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "3PKV84A", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "TN8OPGM", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "JG6TGN0", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "WB67A5C", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "599EBSS", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "QETRBY0", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "CVUKPSK", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "52YJMBM", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "C6YX7Q8", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "SYHXKJA", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "V4WL1X4", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "9A9NAWU", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "KFFJQC8", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "AFGTK56", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "4AD12OO", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "095WMCY", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "APT4EDM", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "PC7YTLF", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "KJ3GVM7", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "E4TJXB0", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "MPQR9BV", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "S8UD76N", 
+    "state": "O"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "E52G244", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "2JM7C4R", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "GMEAJIQ", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "BPB2KO2", 
+    "state": "O"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "JXYJ1D0", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "98MCSJJ", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "F72Y6G3", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "C58SW7F", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "86YA5XL", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "F6MQJLD", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "9WT6U8P", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "VOC003U", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "N1T2BHO", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "8OQVTP5", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "CP90NOF", 
+    "state": "O"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "V3PEN03", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "KLCMS9X", 
+    "state": "O"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "GK5M0FS", 
+    "state": "OP"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "ILE0RNC", 
+    "state": "OP"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "K53E3LH", 
+    "state": "OP"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "87AEBBJ", 
+    "state": "OP"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "B5GT7JO", 
+    "state": "U"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "5PEUF3H", 
+    "state": "U"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "8GA392H", 
+    "state": "U"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "52NMLXJ", 
+    "state": "U"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "GUEGWN5", 
+    "state": "U"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "WRYG87J", 
+    "state": "U"
+  }, 
+  {
+    "make": "Tesla", 
+    "model": "Model S", 
+    "platNum": "TLAF4KG", 
+    "state": "U"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Accord", 
+    "platNum": "HDIDXV0", 
+    "state": "U"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "JKHV8EX", 
+    "state": "U"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "D4CQA4I", 
+    "state": "U"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Sentra", 
+    "platNum": "CVJ38KT", 
+    "state": "U"
+  }, 
+  {
+    "make": "Nissan", 
+    "model": "Leaf", 
+    "platNum": "Q34ADYY", 
+    "state": "U"
+  }, 
+  {
+    "make": "Toyota", 
+    "model": "Prius", 
+    "platNum": "C6AA0LF", 
+    "state": "UP"
+  }, 
+  {
+    "make": "Honda", 
+    "model": "Civic", 
+    "platNum": "G76ED4P", 
+    "state": "UP"
+  }
+]

@@ -10,6 +10,7 @@ var insertBooking = require('./build/insertBooking.js');
 var requestUnoccupiedCars = require('./build/requestUnoccupiedCars.js');
 var insertReservation = require('./build/insertReservation.js');
 var insertMember = require('./build/insertMember.js');
+var insertReturn = require('./build/insertReturn.js');
 
 require("./build/config.js")
 
@@ -30,7 +31,7 @@ site.get('/requestFleet', function(req, res) {
 });
 
 site.get('/insertCar', function(req, res) {
-  insertCar.insertCar(req, res);
+  insertCar.simpleInsertCar(req, res);
 });
 
 site.get('/requestCar', function(req, res) {
@@ -49,12 +50,20 @@ site.post('/requestUnoccupiedCars', function(req, res) {
   requestUnoccupiedCars.requestUnoccupiedCars(req, res);
 });
 
-site.get('/insertReservation', function(req, res) {
+site.post('/reserve', function(req, res) {
   insertReservation.insertReservation(req, res);
 });
 
-site.get('/executeReservation', function(req, res) {
+site.post('/occupy', function(req, res) {
   insertReservation.executeReservation(req, res);
+});
+
+site.post('/scheduleReturn', function(req, res) {
+  insertReturn.insertReturn(req, res);
+});
+
+site.post('/vacate', function(req, res) {
+  insertReturn.executeReturn(req, res);
 });
 
 site.get('/insertMember', function(req, res) {

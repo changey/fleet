@@ -1,4 +1,4 @@
-<table class="unoccupied-cars-table">
+<table class="table unoccupied-cars-table">
   <tr>
     <th>Car ID</th>
     <th>Make</th>
@@ -10,7 +10,19 @@
     <td><%= car._id %></td>
     <td><%= car.make %></td>
     <td><%= car.model %></td>
-    <td><%= car.state %></td>
+    <% if(car.state === "U") { %>
+    <td>Unoccupied</td>
+
+    <% } %>
+    <% if(car.state === "UP") { %>
+    <td>Unoccupied, but pending pickup</td>
+    <% } %>
+    <% if(car.state === "O") { %>
+    <td>Occupied</td>
+    <% } %>
+    <% if(car.state === "OP") { %>
+    <td>Occupied, but pending return</td>
+    <% } %>
   </tr>
   <% }); %>
 </table>

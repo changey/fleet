@@ -1,25 +1,36 @@
+var url = require('url');
 var mongoose = require("mongoose");
 var Booking = require("./models/booking_model.js");
 var Car = require("./models/car_model.js");
+var Global = require("./global.js");
+var _ = require('underscore');
 require("./config.js");
 
 exports.insertBooking = function(req, res) {
 
   var that = this;
-  
-  Car.find().exec(function(err, cars) {
 
-    var output = [];
+  var url_parts = url.parse(req.url, true);
+  var query = url_parts.query;
+  
+  if(query.password === "breeze") {
+    
+  }
+  
+  Car.find({
+    state: "O"
+  }).exec(function(err, cars) {
+
     if(err || !cars || cars.length === 0) {
       res.send("No Car Found");
     } else {
       cars.forEach( function(car) {
-        var date;
-        for (var i =0; i < 31; i ++) {
-          date = new Date(2015, 1, i + 1);
-          that.addBooking(car._id, date);
+        var reservedDates = Global.getDates(Global.getTodayDate(), new Date(2015, 1, 28));
+        for (var i = 0; i < _.size(reservedDates); i++) {
+          that.addBooking(car._id, reservedDates[i]);
         }
       });
+
     };
   });
 

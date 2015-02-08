@@ -1,5 +1,6 @@
+<h2>Car Details</h2>
 <div>
-  <table>
+  <table class="table">
     <tr>
       <td>
         Make
@@ -33,18 +34,19 @@
       </td>
     </tr>
   </table>
-  <br></br>
   <% if(stateSymbol === "U") { %>
+  <input class="datepicker reserve-date">
   <button class="change-state" data-action="reserve" data-id="<%= _id %>">Reserve</button>
   
   <% } %>
   <% if(stateSymbol === "UP") { %>
-  <button class="change-state" data-id="<%= _id %>">Occupy</button>
+  <button class="change-state" data-action="occupy" data-id="<%= _id %>">Occupy</button>
   <% } %>
   <% if(stateSymbol === "O") { %>
-  <button class="change-state" data-id="<%= _id %>">Schedule a return</button>
+  <input class="datepicker reserve-date">
+  <button class="change-state" data-action="scheduleReturn" data-id="<%= _id %>">Schedule a return</button>
   <% } %>
   <% if(stateSymbol === "OP") { %>
-  <button class="change-state" data-id="<%= _id %>">Vacate</button>
+  <button class="change-state" data-action="vacate" data-id="<%= _id %>">Vacate</button>
   <% } %>
 </div>

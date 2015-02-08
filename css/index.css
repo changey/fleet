@@ -7,3 +7,12 @@
 .unoccupied-cars-container {
   margin-top: 70px;
 }
+
+.utilization-container {
+  margin-top: 26px;
+}
+
+#chart {
+  margin-top: 65px;
+  margin-left: 90px;
+}
