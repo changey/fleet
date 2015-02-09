@@ -43,7 +43,7 @@ exports.addBooking = function(car_id, date) {
     {
       "car_id": car_id,
       "date": date,
-      "occupied": false
+      "occupied": true
     }
   );
 

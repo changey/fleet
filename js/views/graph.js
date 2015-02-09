@@ -24,7 +24,6 @@ define(function(require) {
       var that = this;
       this.foo = "bar";
       
-      this.renderCarDetails();
       this.requestCar();
       var unoccupiedCarsTemplate = _.template(UnoccupiedCarsTemplate);
 
@@ -83,7 +82,6 @@ define(function(require) {
         }
       });
 
-      this.$el.find('.car-details').empty();
     },
     
     requestCar: function() {
@@ -93,7 +91,13 @@ define(function(require) {
       $.ajax({
         url: "/requestCar",
         success: function(response) {
-          that.parseCars(JSON.parse(response));
+          var cars = JSON.parse(response);
+          var totalNumCars = _.size(cars);
+          var occupiedCars = _.size(_.where(cars, {state: "O"})) +
+            _.size(_.where(cars, {state: "OP"}));
+          that.currentUtilizationRate = occupiedCars/totalNumCars;
+          that.renderCarDetails();
+          that.parseCars(cars);
           that.createGraph(that.cars);
         }
       });
@@ -115,12 +119,15 @@ define(function(require) {
         _id = sequenceArray[3].name;
       }
       
+      var roundedUtilizationRate = (this.currentUtilizationRate * 100).toFixed(0);
+      
       var template = _.template(CarDetailsTemplate, {
         stateSymbol: stateSymbol,
         state: state,
         make: make,
         model: model,
-        _id: _id
+        _id: _id,
+        currentUtilizationRate: roundedUtilizationRate
       });
       this.$el.find('.car-details').html(template);
       this.$el.find('.datepicker').datepicker();
