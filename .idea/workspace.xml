@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c124944a-eef5-4f86-83a3-e7a0be3aa0f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/requestBooking.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/carDetails.tmpl" afterPath="$PROJECT_DIR$/templates/carDetails.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/graph.js" afterPath="$PROJECT_DIR$/js/views/graph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/insertBooking.js" afterPath="$PROJECT_DIR$/build/insertBooking.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/requestBooking.js" afterPath="$PROJECT_DIR$/build/requestBooking.js" />
     </list>
     <ignored path="view-the-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +65,7 @@
     <favorites_list name="view-the-world" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44089147">
+    <splitter split-orientation="horizontal" split-proportion="0.36434108">
       <split-first>
         <leaf>
           <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
@@ -158,19 +153,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="insertBooking.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="insertBooking.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/insertBooking.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="45" column="22" selection-start="1046" selection-end="1046" vertical-scroll-proportion="1.1891892" vertical-offset="15" max-vertical-offset="945">
+                <state line="45" column="22" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="945">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="requestBooking.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="requestBooking.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="25" selection-start="225" selection-end="225" vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="360">
+                <state line="8" column="44" selection-start="244" selection-end="244" vertical-scroll-proportion="0.23346303" vertical-offset="0" max-vertical-offset="514">
                   <folding />
                 </state>
               </provider>
@@ -254,16 +249,16 @@
         <option value="$PROJECT_DIR$/build/insertReservation.js" />
         <option value="$PROJECT_DIR$/templates/carDetails.tmpl" />
         <option value="$PROJECT_DIR$/js/views/graph.js" />
-        <option value="$PROJECT_DIR$/build/requestBooking.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/build/insertBooking.js" />
+        <option value="$PROJECT_DIR$/build/requestBooking.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
-    <option name="y" value="186" />
+    <option name="x" value="65" />
+    <option name="y" value="219" />
     <option name="width" value="1319" />
     <option name="height" value="688" />
   </component>
@@ -912,15 +907,15 @@
       <workItem from="1423260075989" duration="3310000" />
       <workItem from="1423279011938" duration="6591000" />
       <workItem from="1423292763175" duration="33319000" />
-      <workItem from="1423439745437" duration="464000" />
+      <workItem from="1423439745437" duration="642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62354000" />
+    <option name="totallyTimeSpent" value="62532000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="186" width="1319" height="688" extended-state="0" />
+    <frame x="65" y="219" width="1319" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1163,7 +1158,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="23" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="870">
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1264,16 +1259,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
+    <entry file="file://$PROJECT_DIR$/build/insertBooking.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="225" selection-end="225" vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="360">
+        <state line="45" column="22" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="945">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/insertBooking.js">
+    <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="22" selection-start="1046" selection-end="1046" vertical-scroll-proportion="1.1891892" vertical-offset="15" max-vertical-offset="945">
+        <state line="8" column="44" selection-start="244" selection-end="244" vertical-scroll-proportion="0.23346303" vertical-offset="0" max-vertical-offset="514">
           <folding />
         </state>
       </provider>

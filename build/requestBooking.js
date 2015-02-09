@@ -6,7 +6,7 @@ exports.requestBooking = function(req, res) {
 
   var outputJson = '';
   Booking.find({
-    date: new Date(2015, 1, 8)
+    date: { $gte: new Date(2015, 1, 8), $lte: new Date(2015, 1, 9) } 
   }).sort().exec(function(err, bookings) {
 
     if(err || !bookings || bookings.length === 0) {
