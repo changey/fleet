@@ -38,7 +38,24 @@ define(function(require) {
     },
     
     requestUtilizationRate: function() {
-      
+      console.log("here")
+
+      $.ajax({
+        type: "POST",
+        url: "/requestBooking",
+//        data: {
+//          queryDate: queryDate
+//        },
+        success: function(bookings) {
+
+          console.log(bookings)
+//          var template = _.template(UnoccupiedCarsTableTemplate, {
+//            unoccupiedCars: unoccupiedCars
+//          });
+//
+//          that.$el.find('.unoccupied-table-container').html(template);
+        }
+      });
     },
 
     searchUnoccupied: function() {
@@ -54,7 +71,6 @@ define(function(require) {
         },
         success: function(unoccupiedCars) {
 
-          //that.renderUnoccupiedCars(unoccupiedCars);
           var template = _.template(UnoccupiedCarsTableTemplate, {
             unoccupiedCars: unoccupiedCars
           });

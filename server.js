@@ -71,7 +71,7 @@ site.get('/insertMember', function(req, res) {
   insertMember.insertMember(req, res);
 });
 
-site.get('/requestBooking', function(req, res) {
+site.post('/requestBooking', function(req, res) {
   requestBooking.requestBooking(req, res);
 });
 
