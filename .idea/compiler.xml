@@ -24,7 +24,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="view-the-world" />
+        <module name="fleet" />
       </profile>
     </annotationProcessing>
   </component>

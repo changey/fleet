@@ -8,7 +8,7 @@
     <version>1.0.1</version>
   </parent> -->
   <groupId>com.foo</groupId>
-  <artifactId>view-the-world</artifactId>
+  <artifactId>fleet</artifactId>
   <version></version>
   <name>fleet</name>
   <scm>

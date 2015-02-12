@@ -3,9 +3,12 @@ body {
   font-size: 12px;
   font-weight: 400;
   background-color: #fff;
-  width: 680px;
   height: 800px;
   margin-top: 10px;
+}
+
+.graph {
+  width: 680px;
 }
 
 #main {

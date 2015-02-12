@@ -33,7 +33,6 @@ exports.executeReturn = function(req, res) {
   var that = this;
 
   var car_id = req.body.carId;
-  console.log(req.body)
 
   UpdateCar.updateCar(req, res);
   
