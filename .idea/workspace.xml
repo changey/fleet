@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c124944a-eef5-4f86-83a3-e7a0be3aa0f0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/graph.css" afterPath="$PROJECT_DIR$/css/graph.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/insertReturn.js" afterPath="$PROJECT_DIR$/build/insertReturn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/requestBooking.js" afterPath="$PROJECT_DIR$/build/requestBooking.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/graph.js" afterPath="$PROJECT_DIR$/js/views/graph.js" />
     </list>
     <ignored path="view-the-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +65,7 @@
     <favorites_list name="view-the-world" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50710225">
+    <splitter split-orientation="horizontal" split-proportion="0.5916193">
       <split-first>
         <leaf>
           <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
@@ -109,10 +101,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="graph.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="graph.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/views/graph.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="105" column="20" selection-start="2872" selection-end="2888" vertical-scroll-proportion="-4.752747" vertical-offset="4170" max-vertical-offset="8805">
+                <state line="23" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.21466905" vertical-offset="225" max-vertical-offset="8835">
                   <folding />
                 </state>
               </provider>
@@ -176,10 +168,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="requestBooking.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="requestBooking.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="51" selection-start="87" selection-end="111" vertical-scroll-proportion="0.026833631" vertical-offset="0" max-vertical-offset="559">
+                <state line="11" column="8" selection-start="324" selection-end="324" vertical-scroll-proportion="0.3021978" vertical-offset="0" max-vertical-offset="546">
                   <folding />
                 </state>
               </provider>
@@ -240,7 +232,6 @@
         <option value="$PROJECT_DIR$/build/updateCar.js" />
         <option value="$PROJECT_DIR$/build/insertReservation.js" />
         <option value="$PROJECT_DIR$/templates/carDetails.tmpl" />
-        <option value="$PROJECT_DIR$/js/views/graph.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/build/insertBooking.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -249,6 +240,7 @@
         <option value="$PROJECT_DIR$/build/insertReturn.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/build/requestBooking.js" />
+        <option value="$PROJECT_DIR$/js/views/graph.js" />
       </list>
     </option>
   </component>
@@ -822,19 +814,19 @@
       <workItem from="1423590222294" duration="2362000" />
       <workItem from="1423612197519" duration="689000" />
       <workItem from="1423673826230" duration="598000" />
-      <workItem from="1423682316973" duration="3673000" />
+      <workItem from="1423682316973" duration="4458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73180000" />
+    <option name="totallyTimeSpent" value="73965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1922" y="120" width="1656" height="967" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1182,16 +1174,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/graph.js">
+    <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="20" selection-start="2872" selection-end="2888" vertical-scroll-proportion="-4.752747" vertical-offset="4170" max-vertical-offset="8805">
+        <state line="11" column="8" selection-start="324" selection-end="324" vertical-scroll-proportion="0.3021978" vertical-offset="0" max-vertical-offset="546">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
+    <entry file="file://$PROJECT_DIR$/js/views/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="51" selection-start="87" selection-end="111" vertical-scroll-proportion="0.026833631" vertical-offset="0" max-vertical-offset="559">
+        <state line="23" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.21466905" vertical-offset="225" max-vertical-offset="8835">
           <folding />
         </state>
       </provider>

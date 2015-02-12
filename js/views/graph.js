@@ -16,13 +16,11 @@ define(function(require) {
   var graph = Backbone.View.extend({
     events: {
       'click .change-state': 'changeState',
-      'click .unoccupied-search': 'searchUnoccupied'
+      'click .unoccupied-search': 'searchUnoccupied',
+      'click .utilization-search': 'requestUtilizationRate'
     },
     
     render: function() {
-
-      var that = this;
-      this.foo = "bar";
       
       this.requestCar();
       var unoccupiedCarsTemplate = _.template(UnoccupiedCarsTemplate);
@@ -37,6 +35,10 @@ define(function(require) {
 
       this.$el.find('.datepicker').datepicker();
 
+    },
+    
+    requestUtilizationRate: function() {
+      
     },
 
     searchUnoccupied: function() {
