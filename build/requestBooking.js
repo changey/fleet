@@ -8,6 +8,7 @@ exports.requestBooking = function(req, res) {
   var outputJson = '';
   var startDate = Global.parseQueryDate(req.body.startDate);
   var endDate = Global.parseQueryDate(req.body.endDate);
+
   Booking.find({
     date: { $gte: startDate, $lte: endDate } 
   }).sort().exec(function(err, bookings) {
