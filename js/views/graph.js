@@ -39,6 +39,10 @@ define(function(require) {
     
     requestUtilizationRate: function() {
       console.log("here")
+      debugger
+      var payload = {
+        startDate: this.$el.find('.start-date').val()
+      }
 
       $.ajax({
         type: "POST",

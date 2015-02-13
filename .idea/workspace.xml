@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c124944a-eef5-4f86-83a3-e7a0be3aa0f0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/graph.js" afterPath="$PROJECT_DIR$/js/views/graph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/requestBooking.js" afterPath="$PROJECT_DIR$/build/requestBooking.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="view-the-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,55 +67,13 @@
     <favorites_list name="view-the-world" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5916193">
+    <splitter split-orientation="horizontal" split-proportion="0.5093716">
       <split-first>
         <leaf>
           <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="16" column="25" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="630">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="insertMember.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/build/insertMember.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="34" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="71" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="615">
-                  <folding>
-                    <marker date="1423693706000" expanded="true" signature="305:389" placeholder="..." />
-                    <marker date="1423693706000" expanded="true" signature="434:765" placeholder="..." />
-                    <marker date="1423693706000" expanded="true" signature="526:747" placeholder="..." />
-                    <marker date="1423693706000" expanded="false" signature="572:591" placeholder="..." />
-                    <marker date="1423693706000" expanded="true" signature="592:727" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="graph.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/views/graph.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="6" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="9075">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="member_model.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/build/models/member_model.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="24" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="195">
                   <folding />
                 </state>
               </provider>
@@ -138,10 +97,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="graph.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/views/graph.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="43" column="53" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.30864197" vertical-offset="495" max-vertical-offset="9135">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="73" column="9" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.62432915" vertical-offset="746" max-vertical-offset="1305">
+                <state line="65" column="41" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="1305">
                   <folding />
                 </state>
               </provider>
@@ -163,16 +131,34 @@
           <file leaf-file-name="insertBooking.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/insertBooking.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="45" column="22" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="945">
+                <state line="2" column="29" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="requestBooking.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="requestBooking.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="1" selection-start="515" selection-end="515" vertical-scroll-proportion="0.4945055" vertical-offset="0" max-vertical-offset="546">
+                <state line="2" column="36" selection-start="124" selection-end="124" vertical-scroll-proportion="0.061728396" vertical-offset="0" max-vertical-offset="486">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="requestUnoccupiedCars.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/build/requestUnoccupiedCars.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="0" selection-start="163" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="utilization.tmpl" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/utilization.tmpl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="165">
                   <folding />
                 </state>
               </provider>
@@ -181,7 +167,7 @@
           <file leaf-file-name="insertReservation.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/insertReservation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="17" selection-start="660" selection-end="671" vertical-scroll-proportion="-9.769231" vertical-offset="76" max-vertical-offset="1290">
+                <state line="22" column="17" selection-start="660" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1290">
                   <folding />
                 </state>
               </provider>
@@ -239,18 +225,18 @@
         <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/build/insertReturn.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/build/requestBooking.js" />
-        <option value="$PROJECT_DIR$/js/views/graph.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/js/views/graph.js" />
+        <option value="$PROJECT_DIR$/build/requestBooking.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1922" />
-    <option name="y" value="120" />
-    <option name="width" value="1656" />
-    <option name="height" value="967" />
+    <option name="x" value="102" />
+    <option name="y" value="130" />
+    <option name="width" value="1277" />
+    <option name="height" value="680" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -296,6 +282,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="aafleet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fleet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aafleet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -816,22 +816,22 @@
       <workItem from="1423612197519" duration="689000" />
       <workItem from="1423673826230" duration="598000" />
       <workItem from="1423682316973" duration="4652000" />
+      <workItem from="1423808062825" duration="791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74159000" />
+    <option name="totallyTimeSpent" value="74950000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1922" y="120" width="1656" height="967" extended-state="0" />
+    <frame x="102" y="130" width="1277" height="680" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1037415" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17142858" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -845,11 +845,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12763321" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12307692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17142858" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -927,13 +928,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="4" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="525">
-          <folding>
-            <marker date="1423693706000" expanded="true" signature="305:389" placeholder="..." />
-            <marker date="1423693706000" expanded="true" signature="434:765" placeholder="..." />
-            <marker date="1423693706000" expanded="true" signature="526:747" placeholder="..." />
-            <marker date="1423693706000" expanded="false" signature="572:591" placeholder="..." />
-            <marker date="1423693706000" expanded="true" signature="592:727" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,11 +1012,6 @@
         <state line="1" column="27" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="150" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/requestUnoccupiedCars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="34" selection-start="116" selection-end="116" vertical-scroll-proportion="0.070754714" vertical-offset="0" max-vertical-offset="636" />
@@ -1045,11 +1035,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/forever/node_modules/winston/test/transports/console-test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/utilization.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/carDetails.tmpl">
@@ -1108,9 +1093,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/graph.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="44" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.json">
@@ -1134,16 +1117,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/insertBooking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="22" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/insertReservation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="660" selection-end="671" vertical-scroll-proportion="-9.769231" vertical-offset="76" max-vertical-offset="1290">
+        <state line="22" column="17" selection-start="660" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
@@ -1157,34 +1133,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="71" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="615">
-          <folding>
-            <marker date="1423693706000" expanded="true" signature="305:389" placeholder="..." />
-            <marker date="1423693706000" expanded="true" signature="434:765" placeholder="..." />
-            <marker date="1423693706000" expanded="true" signature="526:747" placeholder="..." />
-            <marker date="1423693706000" expanded="false" signature="572:591" placeholder="..." />
-            <marker date="1423693706000" expanded="true" signature="592:727" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="515" selection-end="515" vertical-scroll-proportion="0.4945055" vertical-offset="0" max-vertical-offset="546">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="6" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="9075">
+        <state line="5" column="71" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="9" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.62432915" vertical-offset="746" max-vertical-offset="1305">
+        <state line="65" column="41" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/insertBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/utilization.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="53" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.30864197" vertical-offset="495" max-vertical-offset="9135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/requestUnoccupiedCars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="163" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/requestBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="124" selection-end="124" vertical-scroll-proportion="0.061728396" vertical-offset="0" max-vertical-offset="486">
           <folding />
         </state>
       </provider>

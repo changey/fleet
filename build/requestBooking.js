@@ -1,5 +1,6 @@
 var mongoose = require("mongoose");
 var Booking = require("./models/booking_model.js");
+var Global = require("./global.js");
 require("./config.js");
 
 exports.requestBooking = function(req, res) {
