@@ -38,18 +38,16 @@ define(function(require) {
     },
     
     requestUtilizationRate: function() {
-      console.log("here")
-      debugger
+
       var payload = {
-        startDate: this.$el.find('.start-date').val()
+        startDate: this.$el.find('.start-date').val(),
+        endDate: this.$el.find('.end-date').val()
       }
 
       $.ajax({
         type: "POST",
         url: "/requestBooking",
-//        data: {
-//          queryDate: queryDate
-//        },
+        data: payload,
         success: function(bookings) {
 
           console.log(bookings)

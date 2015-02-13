@@ -6,8 +6,10 @@ require("./config.js");
 exports.requestBooking = function(req, res) {
 
   var outputJson = '';
+  var startDate = Global.parseQueryDate(req.body.startDate);
+  var endDate = Global.parseQueryDate(req.body.endDate);
   Booking.find({
-    date: { $gte: new Date(2015, 1, 10), $lte: new Date(2015, 1, 11) } 
+    date: { $gte: startDate, $lte: endDate } 
   }).sort().exec(function(err, bookings) {
 
     if(err || !bookings || bookings.length === 0) {
