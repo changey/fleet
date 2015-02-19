@@ -32,7 +32,7 @@ site.get('/requestFleet', function(req, res) {
 });
 
 site.get('/insertCar', function(req, res) {
-  insertCar.simpleInsertCar(req, res);
+  insertCar.insertCar(req, res);
 });
 
 site.get('/requestCar', function(req, res) {
@@ -77,6 +77,6 @@ site.post('/requestBooking', function(req, res) {
 
 var httpServer = http.createServer(site);
 
-httpServer.listen(9401);
+httpServer.listen(80);
 
 module.exports = site;

@@ -1,6 +1,18 @@
 var mongoose = require("mongoose");
 
-uristring = 'mongodb://localhost:27017/Fleet';
+var uristring = 'mongodb://localhost:27017/Fleet';
+
+var DB_USER = "eric";
+var DB_PASSWORD = "breeze";
+var mongolabUri = "@ds031541.mongolab.com:31541/fleet";
+
+var MONGOLAB_URI = "mongodb://"
+  + DB_USER
+  + ":"
+  + DB_PASSWORD
+  + mongolabUri;
+
+uristring = MONGOLAB_URI;
 
 mongoose.connect(uristring, function(err, res) {
   if(err) {
