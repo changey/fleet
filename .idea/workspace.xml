@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c124944a-eef5-4f86-83a3-e7a0be3aa0f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/overall.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/carDetails.tmpl" afterPath="$PROJECT_DIR$/templates/carDetails.tmpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="view-the-world.iws" />
@@ -68,40 +67,13 @@
     <favorites_list name="view-the-world" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.67105263">
+    <splitter split-orientation="horizontal" split-proportion="0.43092105">
       <split-first>
         <leaf>
-          <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="25" selection-start="346" selection-end="346" vertical-scroll-proportion="-0.0" vertical-offset="240" max-vertical-offset="630">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="updateCar.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/updateCar.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="23" column="24" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="825">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="requestCar.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/build/requestCar.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="22" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="360">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="graph.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/views/graph.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="53" column="14" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="9105">
                   <folding />
                 </state>
               </provider>
@@ -116,15 +88,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="28" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1305">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
@@ -134,10 +97,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="overall.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="overall.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/overall.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="27" selection-start="40" selection-end="40" vertical-scroll-proportion="0.031380754" vertical-offset="0" max-vertical-offset="478">
+                <state line="1" column="16" selection-start="29" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="carDetails.tmpl" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/carDetails.tmpl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="870">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/index.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="1" selection-start="290" selection-end="290" vertical-scroll-proportion="0.6903766" vertical-offset="0" max-vertical-offset="478">
                   <folding />
                 </state>
               </provider>
@@ -183,10 +164,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="insertCar.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="insertCar.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/build/insertCar.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="24" selection-start="366" selection-end="366" vertical-scroll-proportion="0.29032257" vertical-offset="90" max-vertical-offset="2505">
+                <state line="18" column="13" selection-start="484" selection-end="484" vertical-scroll-proportion="0.37656903" vertical-offset="90" max-vertical-offset="2505">
                   <folding />
                 </state>
               </provider>
@@ -258,10 +239,8 @@
         <option value="$PROJECT_DIR$/templates/unoccupiedCars.tmpl" />
         <option value="$PROJECT_DIR$/build/requestUnoccupiedCars.js" />
         <option value="$PROJECT_DIR$/templates/utilization.tmpl" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/build/updateCar.js" />
         <option value="$PROJECT_DIR$/build/insertReservation.js" />
-        <option value="$PROJECT_DIR$/templates/carDetails.tmpl" />
         <option value="$PROJECT_DIR$/build/insertBooking.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/css/graph.css" />
@@ -275,13 +254,15 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/build/insertCar.js" />
         <option value="$PROJECT_DIR$/css/overall.css" />
+        <option value="$PROJECT_DIR$/templates/carDetails.tmpl" />
+        <option value="$PROJECT_DIR$/css/index.css" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="297" />
-    <option name="y" value="184" />
+    <option name="x" value="249" />
+    <option name="y" value="101" />
     <option name="width" value="1196" />
     <option name="height" value="753" />
   </component>
@@ -343,6 +324,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fleet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aafleet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -799,15 +794,15 @@
       <workItem from="1424037729051" duration="625000" />
       <workItem from="1424241238352" duration="2229000" />
       <workItem from="1424545455271" duration="153000" />
-      <workItem from="1424749123265" duration="1697000" />
+      <workItem from="1424749123265" duration="2073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81065000" />
+    <option name="totallyTimeSpent" value="81441000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="297" y="184" width="1196" height="753" extended-state="0" />
+    <frame x="249" y="101" width="1196" height="753" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -991,19 +986,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/carDetails.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="270" selection-end="270" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="870" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/models/member_model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="24" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/graph.css">
@@ -1143,16 +1128,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/insertCar.js">
+    <entry file="file://$PROJECT_DIR$/css/overall.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="366" selection-end="366" vertical-scroll-proportion="0.29032257" vertical-offset="90" max-vertical-offset="2505">
+        <state line="1" column="16" selection-start="29" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/overall.css">
+    <entry file="file://$PROJECT_DIR$/templates/carDetails.tmpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="27" selection-start="40" selection-end="40" vertical-scroll-proportion="0.031380754" vertical-offset="0" max-vertical-offset="478">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="290" selection-end="290" vertical-scroll-proportion="0.6903766" vertical-offset="0" max-vertical-offset="478">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/insertCar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="484" selection-end="484" vertical-scroll-proportion="0.37656903" vertical-offset="90" max-vertical-offset="2505">
           <folding />
         </state>
       </provider>
